@@ -36,7 +36,7 @@ public class Bai3 {
 
 
     // Bai 3.3 Tinh tong va trung binh cong
-    public static void main(String[] args){
+    /*public static void main(String[] args){
         double x,y,z;
         Scanner sc= new Scanner(System.in);
 
@@ -50,5 +50,27 @@ public class Bai3 {
         double tbc = (x+y+z)/ 3;
         System.out.println("Tong diem 3 mon = " + (x+y+z));
         System.out.println("Trung binh cong diem 3 mon = " +tbc);
+    }*/
+
+    //Viết chương trình nhập số nguyên có 3 chữ số, sau đó in ra màn hình chữ số hàng đơn vị, hàng chục, hàng trăm.
+    public static void main(String[] args){
+
+
+           /* Scanner sc=new Scanner(System.in);
+            System.out.println("Nhap so co 3 chu so : ");
+        int n=sc.nextInt();
+        if ( n>0 || n<1000);{
+            System.out.println("Nhap so co 3 chu so : ");
+        }*/
+
+
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Nhap so co 3 chu so : ");
+        int n=sc.nextInt();
+
+        System.out.println("Chu so hang don vi = " + n%10);
+        System.out.println("Chu so hang chuc = " +(n%100)/10);
+        System.out.println("Chu so hang tram = " +(n%1000)/100);
+
     }
 }
