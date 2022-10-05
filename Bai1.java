@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Hinhchunhat {
+public class Bai1 {
     public static void main (String [] args){
         //khai bao bien
         double length, width;
@@ -18,8 +18,6 @@ public class Hinhchunhat {
         cir=(length*width)/2;
         System.out.println("Area = " +area);
         System.out.println("Cir = " +cir);
-
-
 
     }
 }
