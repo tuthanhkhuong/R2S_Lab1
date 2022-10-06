@@ -33,5 +33,6 @@ public class Bai2 {
         salary = pack * 50 + distance * 75 + shift * 50 * 0.1 + feedback + call + electric + other;
         System.out.print("Salary: " +salary);
 
+
     }
 }
