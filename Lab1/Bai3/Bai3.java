@@ -1,3 +1,5 @@
+package Lab1.Bai3;
+
 import java.util.Scanner;
 
 public class Bai3 {
