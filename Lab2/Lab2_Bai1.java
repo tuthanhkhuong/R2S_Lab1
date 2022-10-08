@@ -28,11 +28,11 @@ public class Lab2_Bai1 {
                 System.out.println("Phep tinh nhan: "+ (a*b));
                 break;
             case '/':
-                if (b==0){
-                    System.out.println("Loi");
+                if (b!=0){
+                    System.out.println("Phep tinh chia: " +a/b);
+                    break;
                 }
-                System.out.println("Phep tinh chia: " +a/b);
-                break;
+
 
             default:{
                 System.out.println("Nhap lai: ");
