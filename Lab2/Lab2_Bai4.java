@@ -4,33 +4,38 @@ import java.util.Scanner;
 
 public class Lab2_Bai4 {
     public static void main(String[] args) {
+        boolean isLeaf = false;
+
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("So ngay trong thang");
+        System.out.println("Moi ban nhap nam: ");
+        int year=sc.nextInt();
 
-        System.out.print("Nhap thang: ");
-        int thang = sc.nextInt();
+        System.out.println("Moi ban nhap thang: ");
+        byte month= sc.nextByte();
 
-        System.out.print("Nhap nam: ");
-        int nam = sc.nextInt();
+        switch (month){
+            case 1,3,5,7,8,10,12:
+                System.out.println("Thang co 31 ngay");
+                break;
 
-        if ((thang <1 ) || (thang >12)){
-            System.out.println("Nhap thang tu 1 den 12");
-        }
-        else
-            if ((thang == 4) || (thang == 6) || (thang == 9) || (thang == 11)) {
-            System.out.println("So ngay trong thang "+ thang+ " nam " + nam + " la: 30");
-        }
-        else
-            if((thang == 1) || (thang == 3) || (thang == 5) || (thang == 7) || (thang == 8) || (thang == 10) || (thang == 12)) {
-            System.out.println("So ngay trong thang "+ thang +" nam " + nam + " la: 31");
-        }
-        else
-            if ((thang == 2) && ((nam % 4) == 0) && ((nam % 100) > 0)){
-            System.out.println("So ngay trong thang "+ thang +" năm " + nam + " la: 29");
-        }
-        else {
-            System.out.println("So ngay trong thang " + thang + " năm " + nam + " la: 28");
+            case  4,6,9,11:
+                System.out.println("Thang co 30 ngay");
+                break;
+
+            case 2:
+                if(year%4 ==0){
+                    isLeaf=false;
+                }else{
+                    isLeaf = true;
+                }
+                if (year%400==0) isLeaf=true;
+
+                if (isLeaf) System.out.println("Thang co 29 ngay");
+                else System.out.println("Thang co 28 ngay");
+
+            default:
+                System.out.println("Error !!!!");
         }
     }
 }
