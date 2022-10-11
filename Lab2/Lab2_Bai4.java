@@ -33,6 +33,7 @@ public class Lab2_Bai4 {
 
                 if (isLeaf) System.out.println("Thang co 29 ngay");
                 else System.out.println("Thang co 28 ngay");
+                break;
 
             default:
                 System.out.println("Error !!!!");
