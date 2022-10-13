@@ -1,7 +1,7 @@
-package Lab4;
+package Lab4.Bai1;
 
 
-public class Bai1 {
+public class YC1 {
     public static void main (String [] args){
         int arr[] = {10, 25, -4, 32, 63, 81, 19, -24, 13, 18, 45, 12, 72, 42, -6};
 
