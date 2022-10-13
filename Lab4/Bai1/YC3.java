@@ -13,4 +13,5 @@ public class YC3 {
         }
         System.out.println("Tổng giá trị các phần tử có chỉ số chẵn la: " + cout);
     }
+
 }
