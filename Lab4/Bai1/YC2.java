@@ -11,6 +11,6 @@ public class YC2 {
                 cout++;
             }
         }
-        System.out.println("So phan tu la: " + cout);
+        System.out.println("So phan tu chia het cho 2 va 6 la: " + cout);
     }
 }
