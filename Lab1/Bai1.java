@@ -17,7 +17,7 @@ public class Bai1 {
 
         //tinh chu vi, dien tich
         area=length*width;
-        cir=(length*width)/2;
+        cir=(length+width)*2;
         System.out.println("Area = " +area);
         System.out.println("Cir = " +cir);
 
