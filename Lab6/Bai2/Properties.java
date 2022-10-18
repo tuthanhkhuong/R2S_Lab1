@@ -61,5 +61,15 @@ public class Properties {
         System.out.printf(info);
     }
 
+    public void phanLoaiTG(){
+        if (a!=0 && b!=0 && a==b){
+            System.out.println("\nLa hinh vuong! ");
+        }else if (a!=0 && b!=0 && a!=b){
+            System.out.println("\nLa hinh chu nhat! ");
+        }else if (a==0 && b==0){
+            System.out.println("\nTen hinh tu giac: Khong biet! ");
+        }
+    }
+
 
 }
