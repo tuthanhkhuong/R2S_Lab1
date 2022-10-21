@@ -1,19 +1,19 @@
 package Lab6.Bai3;
 
-public class Propeties {
+public class PhuongTrinh {
     private float a;
 
     private float b;
 
     private float c;
 
-    public Propeties(float a, float b, float c) {
+    public PhuongTrinh(float a, float b, float c) {
         this.a = a;
         this.b = b;
         this.c = c;
     }
 
-    public Propeties() {
+    public PhuongTrinh() {
 
     }
 
