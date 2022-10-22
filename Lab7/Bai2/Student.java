@@ -69,7 +69,7 @@ public class Student {
             System.out.println("Xep loai trung binh");
         }else if (dtb >= 3.5) {
             System.out.println("Xep loai yeu ");
-        }else if (dtb <3.5) {
+        }else if (dtb <3.5 && dtb>=0) {
             System.out.println("Xep loai kem");
         }else {
             System.out.println("Error !!!!!");
