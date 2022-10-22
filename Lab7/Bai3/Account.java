@@ -43,6 +43,10 @@ public class Account {
         System.out.println("Ten tai khoan: " + tenTK);
         System.out.println("So du tai khoan: " + soDuTK);
     }
+    public void thayDoiPin(){
+        System.out.println("Nhap lai ma pin: ");
+        setMaPin(sc.nextInt());
+    }
     public void rutTien(){
         Scanner sc = new Scanner(System.in);
 
@@ -65,23 +69,23 @@ public class Account {
         soDuTK = soDuTK + tienMuonRut;
     }
 
-    public void chuyenKhoan(Account ac1){
-        Scanner sc = new Scanner(System.in);
+    Scanner sc = new Scanner(System.in);
+    public void chuyenKhoan(Account ac2){
+
 
         System.out.println("\nNhap so tien muon chuyen: ");
         int tienMuonChuyen= sc.nextInt();
 
-        if (ac1.soDuTK > 0 && ac1.soDuTK <= ac1.getSoDuTK()){
-            ac1.soDuTK = ac1.soDuTK + tienMuonChuyen;
+        if (this.getSoDuTK() > 0 && this.getSoDuTK() >= tienMuonChuyen){
+            ac2.setSoDuTK(ac2.getSoDuTK() + tienMuonChuyen );
+            this.setSoDuTK(this.getSoDuTK() - tienMuonChuyen);
             System.out.println("\nDa chuyen khoan thanh cong !");
         }else {
             System.out.println("\nTai khoan khong co du tien de chuyen !");
         }
     }
 
-    public void thayDoiPin(){
 
-    }
 
 
 }

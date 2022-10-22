@@ -26,6 +26,9 @@ public class AccountManagement {
         System.out.println("Nhap so du tai khoan: ");
         ac2.setSoDuTK(sc.nextInt());
 
+        System.out.println("\n--------Thay doi PIN tai khoan 1--------");
+        ac1.thayDoiPin();
+
         System.out.println("\n--------Thong tin tai khoan 1--------");
         ac1.hienThongTin();
         ac1.rutTien();
