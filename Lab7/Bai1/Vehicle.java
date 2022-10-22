@@ -85,16 +85,16 @@ public class Vehicle {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Nhap ten chu xe: ");
-        ten= sc.next();
+        setTen(sc.next());
 
         System.out.println("Nhap ten loai xe: ");
-        tenLoai= sc.next();
+        setTenLoai(sc.next());
 
         System.out.println("Nhap dung tich xe: ");
-        dungTich= sc.nextInt();
+        setDungTich(sc.nextInt());
 
         System.out.println("Nhap tri gia xe: ");
-        triGia= sc.nextInt();
+        setTriGia(sc.nextInt());
 
     }
     public int thueTruocBa(){

@@ -11,18 +11,18 @@ public class VehicleManagement {
         Vehicle v3 = new Vehicle();
 
         v1.nhapXe();
-        v2.nhapXe();
-        v3.nhapXe();
+      //  v2.nhapXe();
+      //  v3.nhapXe();
 
         System.out.println("\n-----Hiển thị toàn bộ thông tin xe-----");
         v1.hienThiThongTin();
-        v2.hienThiThongTin();
-        v3.hienThiThongTin();
+      //  v2.hienThiThongTin();
+      //  v3.hienThiThongTin();
 
         System.out.println("\n-----Bảng kê tiền thuế trước bạ của toàn bộ xe -----\n");
         v1.thueTruocBa();
-       v2.thueTruocBa();
-        v3.thueTruocBa();
+      //  v2.thueTruocBa();
+      //  v3.thueTruocBa();
 
     }
 }
