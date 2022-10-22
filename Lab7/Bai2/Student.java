@@ -101,7 +101,7 @@ public class Student {
             System.out.println("Duoc len lop !");
         } else if (dk >= 3.5) {
             System.out.println("Phai thi lai !");
-        } else if (dk < 3.5) {
+        } else if (dk < 3.5 && dk >= 0) {
             System.out.println("O lai lop !");
         }else {
             System.out.println("Error !!!!");
