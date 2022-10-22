@@ -1,22 +1,25 @@
 package BTLTHDT.CacKhaiNiemCoBan.Bai3;
 
+import java.util.Scanner;
+
 public class HinhTron extends ToaDo{
-    private ToaDo tam;
+    private String tam;
     private double banKinh;
 
+    Scanner sc = new Scanner(System.in);
     public HinhTron() {
     }
 
-    public HinhTron(ToaDo tam, double banKinh) {
+    public HinhTron(String tam, double banKinh) {
         this.tam = tam;
         this.banKinh = banKinh;
     }
 
-    public ToaDo getTam() {
+    public String getTam() {
         return tam;
     }
 
-    public void setTam(ToaDo tam) {
+    public void setTam(String tam) {
         this.tam = tam;
     }
 
@@ -36,10 +39,13 @@ public class HinhTron extends ToaDo{
         return banKinh * banKinh * 3.14;
     }
 
-    public void hienThi(){
-        System.out.printf("Hinh tron co tam: " ,tam);
-        System.out.printf("voi ban kinh: " ,banKinh);
-        System.out.printf("Co dien tich va Chu vi lan luot la %.2f va %.2f"
-                ,tinhDienTich(),tinhChuVi());
+    @Override
+    public String toString() {
+        String print = String.format("Hinh tron co tam: %s(%.1f,%.1f)" +
+                        " Voi ban kinh: %.2f " +
+                " Co dien tich va Chu vi lan luot la %.2f va %.2f"
+                ,tam,getX(),getY(),banKinh,tinhDienTich(),tinhChuVi());
+        return print;
     }
+
 }

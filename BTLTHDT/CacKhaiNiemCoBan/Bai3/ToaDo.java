@@ -14,6 +14,7 @@ public class ToaDo {
     }
 
     public float getX() {
+        int x= 5;
         return x;
     }
 
@@ -22,6 +23,7 @@ public class ToaDo {
     }
 
     public float getY() {
+        int y= 5;
         return y;
     }
 
