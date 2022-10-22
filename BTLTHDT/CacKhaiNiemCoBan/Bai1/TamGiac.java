@@ -11,30 +11,9 @@ public class TamGiac {
     }
 
     public TamGiac(double ma, double mb, double mc) {
-        if (ma < 0 || ma >= mb + mc){
-            this.ma = 0;
-        }else {
-            this.ma= ma;
-        }
-        System.out.println("ERROR");
-
-        if (mb < 0 || mb >= ma + mc){
-            this.mb = 0;
-        }else {
-            this.mb= mb;
-        }
-        System.out.println("ERROR");
-
-        if (mc < 0 || mc >= ma + mb){
-            this.mc = 0;
-        }else {
-            this.mc= mc;
-        }
-        System.out.println("ERROR");
-
-        /*this.ma= ma;
+        this.ma= ma;
         this.mb= mb;
-        this.mc= mc;*/
+        this.mc= mc;
     }
 
     public double getMa() {
@@ -50,15 +29,27 @@ public class TamGiac {
     }
 
     public void setMa(double ma) {
-        this.ma = ma;
+        if (ma < 0){
+            this.ma = 0;
+        }else
+            this.ma= 0;
+
     }
 
     public void setMb(double mb) {
-        this.mb = mb;
+        if (mb < 0){
+            this.mb = 0;
+        }else
+            this.mb= 0;
+
     }
 
     public void setMc(double mc) {
-        this.mc = mc;
+        if (mc < 0){
+            this.mc = 0;
+        }else
+            this.mc= 0;
+
     }
 
     public double tinhChuVi(){
@@ -85,13 +76,13 @@ public class TamGiac {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Nhap vao ma: ");
-        ma= sc.nextDouble();
+        setMa(sc.nextDouble());
 
         System.out.println("Nhap vao mb: ");
-        mb= sc.nextDouble();
+        setMb(sc.nextDouble());
 
         System.out.println("Nhap vao mc: ");
-        mc= sc.nextDouble();
+        setMc(sc.nextDouble());
     }
 
     public void laTamGiac(){
