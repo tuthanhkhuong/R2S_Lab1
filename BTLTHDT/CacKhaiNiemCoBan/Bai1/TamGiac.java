@@ -1,4 +1,4 @@
-package BTLTHDT.Bai1;
+package BTLTHDT.CacKhaiNiemCoBan.Bai1;
 
 import java.util.Scanner;
 

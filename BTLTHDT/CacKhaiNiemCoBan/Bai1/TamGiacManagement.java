@@ -1,4 +1,4 @@
-package BTLTHDT.Bai1;
+package BTLTHDT.CacKhaiNiemCoBan.Bai1;
 
 public class TamGiacManagement {
     public static void main(String[] args) {
