@@ -36,39 +36,49 @@ public class Vehicle {
 
     public void setDungTich(int dungTich) {
         if (dungTich<0){
-            dungTich=0;
+            this.dungTich = 0;
+        }else {
+            this.dungTich = dungTich;
         }
-        this.dungTich = dungTich;
     }
 
     public void setTriGia(int triGia) {
         if (triGia<0){
-            triGia=0;
+            this.triGia = 0;
+        }else {
+            this.triGia = triGia;
         }
-        this.triGia = triGia;
     }
 
     public void setTen(String ten) {
-        if (ten == null){
-            ten = "Khong biet";
+        if (ten==null || ten.isEmpty()){
+            this.ten = "Khong biet";
+        }else {
+            this.ten = ten;
         }
-        this.ten = ten;
     }
 
     public void setTenLoai(String tenLoai) {
-        if (tenLoai == null){
-            tenLoai = "Khong biet";
+        if (tenLoai==null || tenLoai.isEmpty()){
+            this.tenLoai = "Khong biet";
+        }else {
+            this.tenLoai = tenLoai;
         }
-        this.tenLoai = tenLoai;
     }
 
     public void hienThiThongTin(){
+        /*
         String info = String.format("\nTen chu xe la: %s " +
                 "\nTen loai xe la: %s " +
                 "\nDung tich xe la: %d " +
-                "\nTri gia xe la: %d" +
-                "\nThue truoc ba la: %d\n",ten,tenLoai,dungTich,triGia,thueTruocBa());
-        System.out.printf(info);
+                "\nTri gia xe la: %d\n"
+                ,ten,tenLoai,dungTich,triGia);
+        System.out.printf(info);*/
+
+        System.out.println("\nTen chu xe la: " + this.ten);
+        System.out.println("Ten loai xe la: " + this.tenLoai);
+        System.out.println("Dung tich xe la: " + this.dungTich);
+        System.out.println("Tri gia xe la: " + this.triGia);
     }
 
     public void nhapXe(){
@@ -97,8 +107,12 @@ public class Vehicle {
         }else if (dungTich >= 200){
             heSo=5;
         }
+        System.out.println("Thue truoc ba cua xe " + tenLoai + " la: "+ (heSo*triGia));
         return heSo*triGia;
     }
 
+    public void sum(){
+
+    }
 
 }

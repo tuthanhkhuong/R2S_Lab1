@@ -14,16 +14,14 @@ public class VehicleManagement {
         v2.nhapXe();
         v3.nhapXe();
 
-        System.out.println("\n-----Bảng kê tiền thuế trước bạ của xe 1-----");
+        System.out.println("\n-----Hiển thị toàn bộ thông tin xe-----");
         v1.hienThiThongTin();
-        v1.thueTruocBa();
-
-        System.out.println("\n-----Bảng kê tiền thuế trước bạ của xe 2-----");
         v2.hienThiThongTin();
-        v2.thueTruocBa();
-
-        System.out.println("\n-----Bảng kê tiền thuế trước bạ của xe 3-----");
         v3.hienThiThongTin();
+
+        System.out.println("\n-----Bảng kê tiền thuế trước bạ của toàn bộ xe -----\n");
+        v1.thueTruocBa();
+       v2.thueTruocBa();
         v3.thueTruocBa();
 
     }
