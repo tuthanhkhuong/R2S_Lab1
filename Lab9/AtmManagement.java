@@ -51,6 +51,4 @@ public class AtmManagement {
             }
         }while (true);
     }
-
-
 }

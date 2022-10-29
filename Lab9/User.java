@@ -73,7 +73,6 @@ public class User extends Account{
     }
 
     Scanner sc = new Scanner(System.in);
-
     Account ac = new Account();
 
     public void nhapThongTin(){

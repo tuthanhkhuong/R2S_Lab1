@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Account{
     private int soTK;
-
     private int soDuTK;
 
     public Account() {
@@ -65,4 +64,5 @@ public class Account{
         System.out.println("\nSo tai khoan: " + soTK);
         System.out.println("\nSo du tai khoan: " + soDuTK);
     }
+
 }
