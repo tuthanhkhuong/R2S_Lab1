@@ -3,23 +3,23 @@ package Lab9;
 import java.util.Scanner;
 
 public class Account{
-    private String soTK;
+    private int soTK;
 
     private int soDuTK;
 
     public Account() {
     }
 
-    public Account(String soTK, int soDuTK) {
+    public Account(int soTK, int soDuTK) {
         this.soTK = soTK;
         this.soDuTK = soDuTK;
     }
 
-    public String getSoTK() {
+    public int getSoTK() {
         return soTK;
     }
 
-    public void setSoTK(String soTK) {
+    public void setSoTK(int soTK) {
         this.soTK = soTK;
     }
 
@@ -33,21 +33,26 @@ public class Account{
 
     Scanner sc = new Scanner(System.in);
 
-    public void rutTien(){
+    private static void close(int i) {
+    }
+
+    public void rutTien(Account account){
         System.out.println("\nNhap so tien muon rut: ");
         int tienMuonRut= sc.nextInt();
 
-        if (soDuTK >0 ){
-            if (soDuTK > tienMuonRut){
+        if (soDuTK >=0 && this.getSoTK() == soTK){
+            if (soDuTK >= tienMuonRut){
                 soDuTK = soDuTK - tienMuonRut;
                 System.out.println("\nRut tien thanh cong !");
             }else {
                 System.out.println("\nTai khoan khong co du tien de rut !");
             }
         }
-        System.out.println("\nSo tai khoan: " + soTK);
+        System.out.printf("\nSo tai khoan: " + getSoTK());
         System.out.println("\nSo du tai khoan: " + soDuTK);
     }
+
+
 
     public void napTien() {
         System.out.println("\nNhap so tien muon nap: ");

@@ -4,7 +4,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Scanner;
 
-public class User{
+public class User extends Account{
     private String ten;
     private String gioTinh;
     private String ngaySinh;
@@ -78,7 +78,7 @@ public class User{
 
     public void nhapThongTin(){
         System.out.println("Nhap so tai khoan: ");
-        ac.setSoTK(sc.next());
+        ac.setSoTK(sc.nextInt());
 
         System.out.println("Nhap ten tai khoan: ");
         ten = sc.next();
@@ -110,7 +110,7 @@ public class User{
 
     public void xuatThongTin(){
         System.out.println("\n----------Thong tin Khach hang----------");
-        System.out.printf("\nSo tai khoan: %d" ,ac.getSoTK());
+        System.out.printf("\nSo tai khoan: %d" ,getSoTK());
         System.out.printf("\nTen tai khoan: %s" ,getTen());
         System.out.printf("\nGioi tinh: %s" ,getGioTinh());
         System.out.println("\nNgay sinh: " + getNgaySinh());

@@ -32,14 +32,26 @@ public class AtmManagement {
                     break;
 
                 case "withdraw" :
-                    account.rutTien();
+                    account.rutTien(account);
                     account.getSoTK();
                     user.getTen();
                     account.getSoDuTK();
                     break;
+
+                case "show":
+                    break;
+
+                case "quit":
+                    System.exit(0);
+                    break;
+
                 default:
+                    System.out.println("Loi !");
+                    break;
             }
 
         }while (true);
     }
+
+
 }
