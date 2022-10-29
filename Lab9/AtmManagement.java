@@ -49,7 +49,6 @@ public class AtmManagement {
                     System.out.println("Loi !");
                     break;
             }
-
         }while (true);
     }
 

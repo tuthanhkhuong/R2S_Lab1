@@ -117,5 +117,6 @@ public class User extends Account{
         System.out.printf("\nNoi sinh: %s" ,getNoiSinh());
         System.out.printf("\nSo dien thoai: %d" ,getSdt());
         System.out.printf("\nEmail: %s \n" ,getEmail());
+
     }
 }

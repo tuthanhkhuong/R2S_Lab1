@@ -52,8 +52,6 @@ public class Account{
         System.out.println("\nSo du tai khoan: " + soDuTK);
     }
 
-
-
     public void napTien() {
         System.out.println("\nNhap so tien muon nap: ");
         int tienMuonNap= sc.nextInt();
