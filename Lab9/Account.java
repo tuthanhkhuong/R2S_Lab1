@@ -35,34 +35,68 @@ public class Account{
     private static void close(int i) {
     }
 
-    public void rutTien(Account account){
-        System.out.println("\nNhap so tien muon rut: ");
-        int tienMuonRut= sc.nextInt();
+    public void rutTien(){
+        int id;
+        int tienMuonRut=0;
 
-        if (soDuTK >=0 && this.getSoTK() == soTK){
+        System.out.println("\nNhap so tai khoan: ");
+        id= sc.nextInt();
+
+        if (id == this.soTK){
+            System.out.println("\nNhap so tien muon rut: ");
+            tienMuonRut= sc.nextInt();
+        }else{
+            System.out.println("So tai khoan ban nhap sai !!!");
+        }
+        if (soDuTK >=0 && id == this.soTK){
             if (soDuTK >= tienMuonRut){
                 soDuTK = soDuTK - tienMuonRut;
                 System.out.println("\nRut tien thanh cong !");
             }else {
                 System.out.println("\nTai khoan khong co du tien de rut !");
             }
+            System.out.printf("\nSo tai khoan: " + soTK);
+            System.out.println("\nSo du tai khoan: " + soDuTK);
         }
-        System.out.printf("\nSo tai khoan: " + getSoTK());
-        System.out.println("\nSo du tai khoan: " + soDuTK);
+
     }
 
     public void napTien() {
-        System.out.println("\nNhap so tien muon nap: ");
-        int tienMuonNap= sc.nextInt();
+        int id;
+        int tienMuonNap=0;
 
-        if (soDuTK >= 0 ){
+        System.out.println("\nNhap so tai khoan: ");
+        id= sc.nextInt();
+
+        if (id == this.soTK){
+            System.out.println("\nNhap so tien muon nap: ");
+            tienMuonNap= sc.nextInt();
+        }else {
+            System.out.println("So tai khoan ban nhap sai !!!");
+        }
+        if (soDuTK >= 0 && id == this.soTK){
             soDuTK = soDuTK + tienMuonNap;
             System.out.println("\nNap tien thanh cong !");
         }else {
-            System.out.println("Error !!");
+            System.out.println("Khong the nap tien vo tai khoan !");
         }
         System.out.println("\nSo tai khoan: " + soTK);
         System.out.println("\nSo du tai khoan: " + soDuTK);
+    }
+
+    public void hienThiGD(){
+        int id;
+        int soLanGD = 0;
+
+        System.out.println("\nNhap so tai khoan: ");
+        id= sc.nextInt();
+
+        if (id == this.soTK){
+            System.out.println("The number of transaction are: " + soLanGD);
+        }else {
+            System.out.println("Loi !");
+        }
+
     }
 
 }

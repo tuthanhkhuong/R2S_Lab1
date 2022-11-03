@@ -76,9 +76,6 @@ public class User extends Account{
     Account ac = new Account();
 
     public void nhapThongTin(){
-        System.out.println("Nhap so tai khoan: ");
-        ac.setSoTK(sc.nextInt());
-
         System.out.println("Nhap ten tai khoan: ");
         ten = sc.next();
 
@@ -86,14 +83,13 @@ public class User extends Account{
         gioTinh= sc.next();
 
         SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
-        df.setLenient(false); // set false để kiểm tra tính hợp lệ của date. VD: tháng 2 phải có 28-29 ngày, năm có 12 tháng,....
+        df.setLenient(false);
         try {
             System.out.println("Nhap ngay sinh: ");
             ngaySinh = sc.next();
-            df.parse(ngaySinh); // parse dateString thành kiểu Date
-
+            df.parse(ngaySinh);
         }
-        catch (ParseException e) { // quăng lỗi nếu dateString ko hợp lệ
+        catch (ParseException e) {
             System.out.println("Invalid date");
         }
 
@@ -109,7 +105,7 @@ public class User extends Account{
 
     public void xuatThongTin(){
         System.out.println("\n----------Thong tin Khach hang----------");
-        System.out.printf("\nSo tai khoan: %d" ,getSoTK());
+        System.out.printf("\nSo tai khoan: %d" ,ac.getSoTK());
         System.out.printf("\nTen tai khoan: %s" ,getTen());
         System.out.printf("\nGioi tinh: %s" ,getGioTinh());
         System.out.println("\nNgay sinh: " + getNgaySinh());

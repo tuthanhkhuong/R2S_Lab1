@@ -20,6 +20,9 @@ public class AtmManagement {
 
             switch (ch){
                 case "open" :
+                    System.out.println("Nhap so tai khoan: ");
+                    account.setSoTK(sc.nextInt());
+
                     user.nhapThongTin();
                     user.xuatThongTin();
                     break;
@@ -32,13 +35,14 @@ public class AtmManagement {
                     break;
 
                 case "withdraw" :
-                    account.rutTien(account);
+                    account.rutTien();
                     account.getSoTK();
                     user.getTen();
                     account.getSoDuTK();
                     break;
 
                 case "show":
+                    account.hienThiGD();
                     break;
 
                 case "quit":
